@@ -19,7 +19,10 @@ The target is reconstructed as a set of if/else rules:
 - `feat_259` acts as a switcher with thresholds 0.2, 0.5, 0.7
 - In each of the four segments, `target02` is a linear combination of `feat_60`, `feat_86`, `feat_88`
 
-`framework_50.py` implements the rules with only standard-library-style operations (no ML inference), as required for the edge-device constraint.
+`framework_50.py` implements the rules with plain if/else logic and only numpy and pandas for I/O (no ML inference), as required for the edge-device constraint.
+
+## Documentation
+See [docs/](docs/) for the approach write-up, results, and figures. The full submission PDF is at [docs/Documentation.pdf](docs/Documentation.pdf).
 
 ## Running
 ```
