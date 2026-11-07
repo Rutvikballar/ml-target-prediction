@@ -1,5 +1,11 @@
 # Part 1: Predicting target01
 
+## Pipeline
+
+![Part 1 pipeline](figures/part1_pipeline_flowchart.png)
+
+*End-to-end pipeline: feature selection, polynomial expansion, CatBoost training, and validation.*
+
 ## Approach
 1. **Baselines:** Linear models (Ridge, Lasso, ElasticNet) reached only R² ≈ 0.05, so the relationship is non-linear. Tree ensembles were much stronger: Random Forest 0.09, XGBoost ≈ 0.70, LightGBM ≈ 0.72, CatBoost 0.77.
 2. **Feature selection:** CatBoost feature importance. The top 10 features carry about 85% of the importance.

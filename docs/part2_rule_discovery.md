@@ -10,6 +10,12 @@ Eight methods (decision tree, random forest, extra trees, gradient boosting, Ada
 ## Switcher variable
 `feat_259` was the root split of the decision tree. It selects which linear formula applies rather than contributing to the formula itself.
 
+The extracted tree structure is shown below. It is a cascade: each `feat_259` split sends one branch to a leaf formula and the other to the next threshold check.
+
+![Part 2 decision tree](figures/part2_decision_tree.png)
+
+*Decision tree showing `feat_259` as the root split and the four resulting leaf regimes.*
+
 ## Thresholds
 Split points from the tree, refined by a grid search: 0.2, 0.5, 0.7.
 
